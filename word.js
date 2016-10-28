@@ -3,7 +3,7 @@
 // 'word.js` should contain all of the methods which will check the letters guessed versus the random word selected.
 
 // require your letter objects
-var letter = require('./letter.js');
+var Letter = require('./letter.js');
 
 var Word = function(wrd){
 	// property to store the string wrd
@@ -26,10 +26,6 @@ var Word = function(wrd){
 		this.found = this.letters.every(function(currentLetter) {
 			return currentLetter.appear;
 		});
-		
-	    // if (this.letters.appear) {
-	    //   this.found = true;
-	    // };
 		return this.found;
 	};
 
@@ -57,4 +53,4 @@ var Word = function(wrd){
 }
 
 // export to use in main.js
-module.exports = word;
+module.exports = Word;

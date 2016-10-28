@@ -10,8 +10,8 @@ var Letter = function(char) {
 	this.letterRender = function() {
 		//if appear is false then show the _
 		//else appear is true then show character
-		if (!appear) {
-			return '_';
+		if (!this.appear) {
+			return '_ ';
 		} else {
 			return this.char;
 		}
